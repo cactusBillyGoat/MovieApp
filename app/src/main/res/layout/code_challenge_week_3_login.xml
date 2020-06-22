@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/medium_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="@dimen/big_font" />
+
+        <EditText
+            android:id="@+id/EmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_line_height"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/PhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_line_height"
+            android:hint="@string/phone" />
+
+        <CheckBox
+            android:id="@+id/TAndCCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_accept_t_c"
+            android:onClick="onTAndCCheckBoxClicked"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_line_height"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="onSubmitButtonClicked"
+            android:text="@string/submit"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
