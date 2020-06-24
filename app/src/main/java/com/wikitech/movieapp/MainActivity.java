@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.wikitech.movieapp.week2.FirstControlsActivity;
 import com.wikitech.movieapp.week3.LoginActivity;
+import com.wikitech.movieapp.week4.UIElementsActivity4;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,12 +19,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnCodeChallengeWeek2Clicked(View view) {
-        Intent intent = new Intent(this, FirstControlsActivity.class);
-        startActivity(intent);
+        startActivity(FirstControlsActivity.class);
     }
 
     public void OnCodeChallengeWeek3Clicked(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(LoginActivity.class);
+    }
+
+    public void OnCodeChallengeWeek4Clicked(View view) {
+        startActivity(UIElementsActivity4.class);
+    }
+
+    private void startActivity (Class<?> cls){
+        Intent intent = new Intent(this, cls);
         startActivity(intent);
     }
 }
